@@ -2,7 +2,7 @@ let input = document.getElementById('input')
 let button = document.querySelector('button')
 let result_box = document.querySelector('.lists')
 
-todos = [];
+let todos = [];
 window.onload = ()=>{
     todos = JSON.parse(localStorage.getItem('todos'))
     todos.forEach(todo=>addtodo(todo))
