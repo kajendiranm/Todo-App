@@ -40,3 +40,8 @@ function addtodo(todo){
         remove(para.innerText)
     })
 }
+input.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' || event.keyCode === 13) {
+      button.click();
+    }
+});
