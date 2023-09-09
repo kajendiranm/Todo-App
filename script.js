@@ -4,7 +4,7 @@ let result_box = document.querySelector('.lists')
 
 let todos = [];
 window.onload = ()=>{
-    todos = JSON.parse(localStorage.getItem('todos'))
+    todos = JSON.parse(localStorage.getItem('todos')) || []
     todos.forEach(todo=>addtodo(todo))
 }
 
